@@ -7,6 +7,7 @@ h1 {
 .counters-wrapper {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .btn-reset {
