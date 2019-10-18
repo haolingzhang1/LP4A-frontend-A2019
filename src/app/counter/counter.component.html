@@ -1,0 +1,5 @@
+<div class="counter">
+    <h3 class="counter-title">{{ title }} {{ position + 1 }}</h3>
+    <p class = "counter-value">{{ counterService.initialValue[position] }}</p>
+    <button (click)="increment()" class ="btn btn-increment">+</button>
+</div>

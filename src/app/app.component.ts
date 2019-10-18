@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CounterService } from './counter.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'counters';
+  constructor(private counterServer: CounterService){  }
+  reset(){
+    this.counterServer.reset();
+  }  
 }

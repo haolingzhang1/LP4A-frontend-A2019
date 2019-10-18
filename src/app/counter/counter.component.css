@@ -1,0 +1,26 @@
+h3 {
+    margin-top: 0px;
+}
+
+.counter {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    background: rgba(70, 196, 255, 0.25);
+    width: 20%;
+    border-radius: 10px;
+    border: 1px solid grey;
+    margin: 5px;
+    padding: 5px;
+}
+
+.counter-title {
+    font-size: 28px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    text-transform: uppercase;
+}
+
+.counter-value {
+    font-size: 24px;
+    font-weight: bolder;
+}

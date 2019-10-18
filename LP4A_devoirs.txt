@@ -1,4 +1,0 @@
-mettre en place le déploiement dans heroku
-
-docs.travis-ci.com/user/deployment/heroku/
-
