@@ -1,0 +1,7 @@
+Frise chronologique des outils web:
+
+199x : serveur physique, html + perl/java
+2000 : VM, rails/perl/java
+2010 : serveur cloud + gestion install (Ansible), angularjs/reactjs
+2012 : docker
+2014 : FeraS (AWS Lambda, Azure Function, Google Cloud Functions), serverless
