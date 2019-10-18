@@ -1,5 +1,9 @@
 <h1>Mes compteurs</h1>
-<button (click)="reset()">Reset</button>
-<app-counter [position]="0"></app-counter>
-<app-counter [position]="1"></app-counter>
-<app-counter [position]="2"></app-counter>
+<div class="actionbar">
+    <button (click)="reset()" class="btn btn-reset">Reset</button>
+</div>
+<div class="counters-wrapper">
+    <app-counter [position]="0"></app-counter>
+    <app-counter [position]="1"></app-counter>
+    <app-counter [position]="2"></app-counter>
+</div>

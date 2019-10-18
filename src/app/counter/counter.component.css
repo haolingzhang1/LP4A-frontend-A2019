@@ -1,26 +1,35 @@
-h3 {
-    margin-top: 0px;
-}
-
 .counter {
     font-family: Helvetica, sans-serif;
     text-align: center;
-    background: rgba(70, 196, 255, 0.25);
-    width: 20%;
+    background-image: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(175,233,255,1) 100%);
     border-radius: 10px;
-    border: 1px solid grey;
+    border: 1px solid rgba(0, 0, 0, 0.5);
     margin: 5px;
     padding: 5px;
+    -webkit-box-shadow: 4px 8px 15px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 8px 15px -2px rgba(0,0,0,0.75);
+    box-shadow: 4px 8px 15px -2px rgba(0,0,0,0.75);
 }
 
 .counter-title {
-    font-size: 28px;
+    font-size: 2rem;
     font-weight: bold;
-    border-bottom: 1px solid black;
+    margin: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     text-transform: uppercase;
 }
 
 .counter-value {
-    font-size: 24px;
+    font-size: 4rem;
     font-weight: bolder;
+    margin: 0px;
+}
+
+.btn-increment {
+    background-color: #4CAF50;
+    border-radius: 50%;
+}
+
+.btn-increment:hover {
+    background-color: rgb(49, 138, 52);
 }
