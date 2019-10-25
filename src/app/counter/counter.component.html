@@ -1,5 +1,11 @@
-<div class="counter">
-    <h3 class="counter-title">{{ title }} {{ position + 1 }}</h3>
-    <p class = "counter-value">{{ counterService.initialValue[position] }}</p>
-    <button (click)="increment()" class ="btn btn-increment">+</button>
-</div>
+<mat-card class="counter-card">
+    <mat-card-title class="counter-title">
+        <h3>{{ title }} {{ position + 1 }}</h3>
+    </mat-card-title>
+    <mat-card-content class="counter-content">
+            <p class="counter-value">{{ counterService.initialValue[position] }}</p>
+    </mat-card-content>
+    <mat-card-actions class="counter-actions">
+            <button (click)="increment()" class ="button button-circle">+</button>
+    </mat-card-actions>
+</mat-card>

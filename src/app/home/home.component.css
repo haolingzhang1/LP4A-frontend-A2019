@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.actionbar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.counters-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

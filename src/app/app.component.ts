@@ -7,9 +7,4 @@ import { CounterService } from './counter.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'counters';
-  constructor(private counterServer: CounterService){  }
-  reset(){
-    this.counterServer.reset();
-  }  
 }

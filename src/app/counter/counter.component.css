@@ -1,14 +1,8 @@
-.counter {
-    font-family: Helvetica, sans-serif;
+.counter-card {
+    max-width: 300px;
     text-align: center;
-    background-image: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(175,233,255,1) 100%);
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
     margin: 5px;
-    padding: 5px;
-    -webkit-box-shadow: 4px 8px 15px -2px rgba(0,0,0,0.75);
-    -moz-box-shadow: 4px 8px 15px -2px rgba(0,0,0,0.75);
-    box-shadow: 4px 8px 15px -2px rgba(0,0,0,0.75);
+    display: inline-block;
 }
 
 .counter-title {
@@ -19,17 +13,16 @@
     text-transform: uppercase;
 }
 
-.counter-value {
+.counter-title h3 {
+    margin: 0px;
+}
+
+.counter-content .counter-value {
     font-size: 4rem;
     font-weight: bolder;
     margin: 0px;
 }
 
-.btn-increment {
-    background-color: #4CAF50;
-    border-radius: 50%;
-}
-
-.btn-increment:hover {
-    background-color: rgb(49, 138, 52);
+.counter-content .counter-value p {
+    margin: 0px;
 }
