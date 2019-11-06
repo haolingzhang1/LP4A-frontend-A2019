@@ -25,7 +25,7 @@ export class CounterService {
   }
 
   patchCounter(id: number) {
-    var url = 'https://lp4a-backend-a2019.herokuapp.com/counters/' + id;
+    var url = 'https://lp4a-backend-a2019.herokuapp.com/counters/' + id + '.json';
     this.http.patch(url, {}).subscribe();
   }
 }

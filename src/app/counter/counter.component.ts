@@ -9,7 +9,7 @@ import { Counter } from '../counter';
   styleUrls: ['./counter.component.css']
 })
 export class CounterComponent implements OnInit {
-  @Input() position;
+  @Input() position : number;
   title = "Compteur";
   name: string;
   value: number;
