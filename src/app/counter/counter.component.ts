@@ -17,8 +17,10 @@ export class CounterComponent implements OnInit {
   constructor(public counterService: CounterService) { }
 
   ngOnInit() {
-    this.counterService.getCounter(this.position + 1).subscribe(counter => this.name = counter.name);
-    this.counterService.getCounter(this.position + 1).subscribe(counter => this.value = counter.value);
+    this.counterService.getCounter(this.position + 1).subscribe(counter => {
+      this.name = counter.name;
+      this.value = counter.value;
+    });
   }
 
   async increment(){
