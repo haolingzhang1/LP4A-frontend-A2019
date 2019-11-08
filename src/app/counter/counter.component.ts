@@ -9,21 +9,20 @@ import { Counter } from '../counter';
   styleUrls: ['./counter.component.css']
 })
 export class CounterComponent implements OnInit {
-  @Input() position : number;
-  title = "Compteur";
+  @Input() id : number;
   name: string;
   value: number;
 
   constructor(public counterService: CounterService) { }
 
   ngOnInit() {
-    this.counterService.getCounter(this.position + 1).subscribe(counter => {
+    this.counterService.getCounter(this.id).subscribe(counter => {
       this.name = counter.name;
       this.value = counter.value;
     });
   }
 
   async increment(){
-    this.value = await this.counterService.increment(this.position);
+    this.value = await this.counterService.increment(this.id);
   }
 }

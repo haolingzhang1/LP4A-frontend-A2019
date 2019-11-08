@@ -6,6 +6,8 @@ import { ProfileComponent } from './profile/profile.component';
 
 import { AuthGuard } from './auth.guard';
 
+import { CounterDetailComponent }  from './counter-detail/counter-detail.component';
+
 
 const routes: Routes = [
   {
@@ -16,7 +18,11 @@ const routes: Routes = [
   {
     path: '',
     component: HomeComponent
-  }
+  },
+  { 
+    path: 'counter/:id', 
+    component: CounterDetailComponent
+  },
 ];
 
 @NgModule({

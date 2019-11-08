@@ -16,8 +16,7 @@ export class CounterService {
     this.initialValue = [0, 0, 0];
   }
 
-  async increment(position: number) : Promise<number> {
-    var id = position + 1;
+  async increment(id: number) : Promise<number> {
     var newPromiseValue = await this.patchCounter(id).pipe(
       switchMap(() => this.getCounter(id)),
       map(counter => counter.value) 
@@ -31,8 +30,23 @@ export class CounterService {
   }
 
   getCounters() : Observable<Counter[]> {
-    var url = 'https://lp4a-backend-a2019.herokuapp.com/counters/'
+    var url = 'https://lp4a-backend-a2019.herokuapp.com/counters.json';
     return this.http.get<Counter[]>(url);
+  }
+
+  getCountersArray() : Array<Counter> {
+    var counters : Array<Counter> = [];
+    this.getCounters()
+      .subscribe((remoteCounters) => {
+        remoteCounters.forEach((remoteCounter) => {
+          counters.push(remoteCounter);
+        });
+        counters.sort(
+          (first : Counter, second : Counter) => first.id - second.id
+        );
+      }
+    );
+    return counters;
   }
 
   patchCounter(id: number) : Observable<Object> {

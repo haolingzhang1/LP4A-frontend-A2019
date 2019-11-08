@@ -32,3 +32,17 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .button-reset:hover {
     background-color: #d12f23;
 }
+
+.button-transparent {
+    border: none;
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.button-transparent:hover {
+    cursor: pointer;
+}
