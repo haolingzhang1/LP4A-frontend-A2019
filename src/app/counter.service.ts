@@ -30,6 +30,11 @@ export class CounterService {
     return this.http.get<Counter>(url);
   }
 
+  getCounters() : Observable<Counter[]> {
+    var url = 'https://lp4a-backend-a2019.herokuapp.com/counters/'
+    return this.http.get<Counter[]>(url);
+  }
+
   patchCounter(id: number) : Observable<Object> {
     var url = 'https://lp4a-backend-a2019.herokuapp.com/counters/' + id + '.json';
     return this.http.patch(url, {});
